@@ -103,11 +103,15 @@ hr{
   color: rgb(165, 165, 165);
 }
 #Des1{
-  display: flex;
-  
-  
+  display: flex; 
 }
 #mInfo1{
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 300px;
+  padding-right: 50px;
+  padding-top: 100px;
+}
+#p1{
+  margin-left: 150px;
+  padding-right: 250px;
+  padding-top: 100px;
 }
