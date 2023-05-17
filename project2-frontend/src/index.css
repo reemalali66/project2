@@ -276,3 +276,26 @@ hr{
   text-decoration: underline;
   margin-top: 100px;
 }
+#child1{
+  display: flex;
+}
+#child2{
+  display: flex;
+}
+#child3{
+  display: flex;
+}
+#child4{
+  display: flex;
+  margin-bottom: 50px;
+}
+.child img{
+  width: 200px;
+  height: 300px;
+  margin-left: 150px;
+  margin-right: 50px;
+}
+.child{
+  margin-top: 50px;
+  margin-right: 100px;
+}
