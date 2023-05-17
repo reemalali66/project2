@@ -1,4 +1,5 @@
 import logo from "./images/logo1.PNG"
+import { Link } from "react-router-dom";
 
 function Header(){
     return(
@@ -7,7 +8,7 @@ function Header(){
              <img src={logo} alt="Clogo" id="Cinemalogo"/>
         <nav>
           
-            <a href=""> Movies </a>
+        <Link to ='/'><a href=""> Movies </a></Link>
             <a href=""> Top 10 Movies </a>
             <a href=""> Add Movie </a>  
         </nav>

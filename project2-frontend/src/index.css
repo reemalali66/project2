@@ -7,6 +7,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#space{
+  display: flex;
+}
+#btn1{
+  margin-left: 450px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -56,6 +65,10 @@ footer a {
   margin-bottom: 20px;
 }
 
+#Movie11{
+  width: 800px;
+  height: 400px;
+}
 #Movie1{
   width: 800px;
   height: 400px;
@@ -248,4 +261,18 @@ hr{
   .reviews{
       margin-top: 10px;
   }
+}
+
+#UserReview{
+  width: 700px;
+  height: 300px;
+  margin-top: 50px;
+}
+#star{
+  width: 30px;
+  height: 30px;
+}
+#WOCT{
+  text-decoration: underline;
+  margin-top: 100px;
 }
