@@ -1,8 +1,12 @@
+import axios from "axios"
+import {useState} from "react";
 import GoldenBeeh from "./images/firstM.jpg"
 import Star from "./images/start.avif"
 import Gage from "./images/g.jpg"
 import Line from "./images/2.jpg"
 function Section2(){
+  const [username, setUsername] = useState("");
+  const [UserReview, setReviewMovie] = useState("");
     return(
         <div id="div1">
             <br/>
@@ -28,13 +32,14 @@ function Section2(){
       </div>
       <div class="modal-body">
         <p> We're glad you have chosen to leave a comment. Please keep in mind that all comments are moderated according to our privacy policy, and all links are nofollow. Do NOT use keywords in the name field. </p>
-      <input name="UserName" id="username" type="text" minlength="3" required placeholder="Name "  /><br />
-     <textarea id="UserReview" placeholder="Enter review" required ></textarea>
+      <input name="UserName" id="username" type="text" minlength="3" required placeholder="Name " onChange={(e)=> {setUsername(e.target.value); console.log(username);}}  /><br />
+     <textarea id="UserReview" placeholder="Enter review" required onChange={(e)=> {setReviewMovie(e.target.value); console.log(UserReview);}} ></textarea>
     <br />
       </div>
       <div class="modal-footer">
         
-        <button type="button" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-primary" onClick={(e)=>{e.preventDefault();
+         axios.post("http://localhost:8700/addReview", {username,UserReview})}}>Submit</button>
       </div>
     </div>
   </div>
